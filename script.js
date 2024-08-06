@@ -80,8 +80,8 @@ document.addEventListener('DOMContentLoaded', function() {
             shipping: shippingMethod
         };
 
-        items.push(newItem); // Add new item to the array
-        filterItems(); // Refresh the displayed items
+        items.push(newItem); 
+        filterItems();
 
         addItemForm.reset();
     });
