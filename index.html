@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="explore">
+            <header>
+                <h1>Explore</h1>
+                <div class="header-controls">
+                    <input type="text" placeholder="Search" class="search-input">
+                    <button class="filter-button">Filter</button>
+                </div>
+            </header>
+            
+            <ul class="item-list" id="item-list">
+            </ul>
+        </div>
+
+        <div class="explore grid-view">
+            <header>
+                <h1>Explore</h1>
+                <div class="header-controls">
+                    <input type="text" placeholder="Search" class="search-input">
+                    <button class="filter-button">Filter</button>
+                </div>
+            </header>
+            <div class="grid-container" id="grid-container">
+            </div>
+        </div>
+
+        <div class="add-item">
+            <header>
+                <h1>Add Item</h1>
+                <button class="add-button">Add</button>
+            </header>
+            <form id="add-item-form">
+                <input type="text" placeholder="Item Name" class="input-field" id="item-name" required>
+                <input type="number" placeholder="Item Price" class="input-field" id="item-price" required>
+                <select class="input-field" id="shipping-method" required>
+                    <option value="">Shipping Method</option>
+                    <option value="Same Day Shipping">Same Day Shipping</option>
+                    <option value="Standard Shipping">None</option>
+                </select>
+                <button type="submit" class="submit-button">Submit</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
